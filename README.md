@@ -19,10 +19,7 @@ samples, guidance on mobile development, and a full API reference.
 
 - ## Get Your Money Under Control
 
-	- ### Portrait
-
-[!Mockup Under Control - Portrait](https://github.com/leonino/flutterando_masterclass_mockup/blob/master/assets/screens/screen_mockup_under_control_portrait.jpg)]
-
+- ### Portrait
+	![Mockup Under Control - Portrait](https://github.com/leonino/flutterando_masterclass_mockup/blob/master/assets/screens/screen_mockup_under_control_portrait.jpg)
 - ### Landscape
-
-[!Mockup Under Control - Landscape](https://github.com/leonino/flutterando_masterclass_mockup/blob/master/assets/screens/screen_mockup_under_control_landscape.jpg)]
+	![Mockup Under Control - Landscape](https://github.com/leonino/flutterando_masterclass_mockup/blob/master/assets/screens/screen_mockup_under_control_landscape.jpg)

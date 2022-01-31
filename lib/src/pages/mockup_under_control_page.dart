@@ -9,43 +9,48 @@ class UnderControlPage extends StatelessWidget {
 
     return Material(
       color: Colors.green,
-      child: Container(
-        color: Colors.black,
-        height: double.infinity,
-        width: double.infinity,
-        child: Visibility(
-          visible: isPortrait,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: <Widget>[
-              ///
-              /// LOGO / TITULO / SUBTITULO
-              ///
-              TopoWidget(isPortrait: isPortrait),
-              // SizedBox(width: 10, height: 10),
+      child: GestureDetector(
+        onTap: () {
+          Navigator.of(context).pushReplacementNamed('/tinder');
+        },
+        child: Container(
+          color: Colors.black,
+          height: double.infinity,
+          width: double.infinity,
+          child: Visibility(
+            visible: isPortrait,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: <Widget>[
+                ///
+                /// LOGO / TITULO / SUBTITULO
+                ///
+                TopoWidget(isPortrait: isPortrait),
+                // SizedBox(width: 10, height: 10),
 
-              ///
-              /// BUTTOM / SIGNUP / EMAIL / GOOGLE
-              ///
-              ButtonWidget(),
-            ],
-          ),
-          replacement: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              ///
-              /// LOGO / TITULO / SUBTITULO
-              ///
-              TopoWidget(isPortrait: isPortrait),
-              SizedBox(width: 10, height: 10),
+                ///
+                /// BUTTOM / SIGNUP / EMAIL / GOOGLE
+                ///
+                ButtonWidget(),
+              ],
+            ),
+            replacement: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                ///
+                /// LOGO / TITULO / SUBTITULO
+                ///
+                TopoWidget(isPortrait: isPortrait),
+                SizedBox(width: 10, height: 10),
 
-              ///
-              /// BUTTOM / SIGNUP / EMAIL / GOOGLE
-              ///
-              ButtonWidget(),
-            ],
+                ///
+                /// BUTTOM / SIGNUP / EMAIL / GOOGLE
+                ///
+                ButtonWidget(),
+              ],
+            ),
           ),
         ),
       ),

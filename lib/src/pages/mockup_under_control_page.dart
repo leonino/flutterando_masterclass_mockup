@@ -82,7 +82,7 @@ class TopoWidget extends StatelessWidget {
         children: [
           SizedBox(width: 50, height: 50),
           Image.asset(
-            "assets/logo_under_control.png",
+            "assets/images/logo_under_control.png",
             scale: 0.25,
             width: 180,
             height: 180,

@@ -23,3 +23,11 @@ samples, guidance on mobile development, and a full API reference.
 	![Mockup Under Control - Portrait](https://github.com/leonino/flutterando_masterclass_mockup/blob/master/assets/screens/screen_mockup_under_control_portrait.jpg)
 - ### Landscape
 	![Mockup Under Control - Landscape](https://github.com/leonino/flutterando_masterclass_mockup/blob/master/assets/screens/screen_mockup_under_control_landscape.jpg)
+
+- ## Tinder
+
+- ### Portrait
+	![Mockup Under Control - Portrait](https://github.com/leonino/flutterando_masterclass_mockup/blob/f1a8d6f2266e469d22d472fa6fe83cfa0b071d73/assets/screens/screen_mockup_tinder_portrait.jpg)
+- ### Landscape
+	![Mockup Under Control - Landscape](https://github.com/leonino/flutterando_masterclass_mockup/blob/f1a8d6f2266e469d22d472fa6fe83cfa0b071d73/assets/screens/screen_mockup_tinder_landscape.jpg)
+

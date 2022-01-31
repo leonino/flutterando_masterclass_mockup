@@ -68,7 +68,7 @@ class TopoTelaLogin extends StatelessWidget {
             Container(
               color: Colors.transparent,
               child: Image.asset(
-                'assets/icons/logo_tinder.png',
+                'assets/images/logo_tinder.png',
                 width: 220,
                 scale: 0.5,
                 height: 100,
@@ -143,7 +143,7 @@ class BottomTelaLogin extends StatelessWidget {
           ),
           SizedBox(height: 10, width: 10),
           OutlineButtonIcon(
-            image: 'assets/icons/logo_facebook_white.png',
+            image: 'assets/icons/icon_facebook_white.png',
             title: 'SIGN IN WITH FACEBOOK',
           ),
           SizedBox(height: 10, width: 10),

@@ -29,5 +29,9 @@ samples, guidance on mobile development, and a full API reference.
 - ### Portrait
 	![Mockup Under Control - Portrait](https://github.com/leonino/flutterando_masterclass_mockup/blob/f1a8d6f2266e469d22d472fa6fe83cfa0b071d73/assets/screens/screen_mockup_tinder_portrait.jpg)
 - ### Landscape
-	![Mockup Under Control - Landscape](https://github.com/leonino/flutterando_masterclass_mockup/blob/f1a8d6f2266e469d22d472fa6fe83cfa0b071d73/assets/screens/screen_mockup_tinder_landscape.jpg)
+	![Mockup Under Control - Landscape](https://github.com/leonino/flutterando_masterclass_mockup/blob/29192eccf79df1debaeedbf38bf2ae9a9ae22c0a/assets/screens/screen_mockup_tinder_landscape.jpg)
 
+
+O Aprendizado continua, e as vezes nas coisas mais simples é que pode fazer a diferença para mim ou você por isso todos os passos são importantes e devem ser realizados com muita atenção.
+
+#VamosSerReferênciaJuntos #Flutter #Flutterando

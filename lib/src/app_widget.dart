@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(),
       routes: {
-        '/': (context) => const UnderControlPage(),
+        '/': (context) => const TinderPage(),
         '/under': (context) => const UnderControlPage(),
         '/tinder': (context) => const TinderPage(),
       },

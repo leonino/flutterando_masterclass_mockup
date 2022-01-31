@@ -1,4 +1,3 @@
-import 'dart:ui';
 
 /// Cores Tinder
 const int cor_tinder_fundo_inicial = 0xffea4a77;

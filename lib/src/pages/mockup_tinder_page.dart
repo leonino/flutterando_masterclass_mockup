@@ -9,36 +9,54 @@ class TinderPage extends StatelessWidget {
   Widget build(BuildContext context) {
     var isPortrait = MediaQuery.of(context).orientation == Orientation.portrait;
 
+    var _icon_arrow_back =
+        Icon(Icons.arrow_back_ios, size: 25, color: Color(cor_tinder_texto));
+
     return Material(
-      child: Container(
-        padding: EdgeInsets.all(25),
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.centerLeft,
-            end: Alignment.centerRight,
-            colors: [
-              Color(cor_tinder_fundo_inicial),
-              Color(cor_tinder_fundo_fim)
-            ],
+      child: GestureDetector(
+        onTap: () {
+          Navigator.of(context).pushReplacementNamed('/under');
+        },
+        child: Container(
+          padding: EdgeInsets.all(25),
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.centerLeft,
+              end: Alignment.centerRight,
+              colors: [
+                Color(cor_tinder_fundo_inicial),
+                Color(cor_tinder_fundo_fim)
+              ],
+            ),
           ),
+          height: double.infinity,
+          width: double.infinity,
+          child: (isPortrait)
+              ? Stack(
+                  children: [
+                    _icon_arrow_back,
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        TopoTelaLogin(isPortrait: isPortrait),
+                        BottomTelaLogin(isPortrait: isPortrait),
+                      ],
+                    ),
+                  ],
+                )
+              : Stack(
+                  children: [
+                    _icon_arrow_back,
+                    Row(
+                      children: [
+                        TopoTelaLogin(isPortrait: isPortrait),
+                        SizedBox(height: 10, width: 10),
+                        BottomTelaLogin(isPortrait: isPortrait),
+                      ],
+                    ),
+                  ],
+                ),
         ),
-        height: double.infinity,
-        width: double.infinity,
-        child: (isPortrait)
-            ? Column(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  TopoTelaLogin(isPortrait: isPortrait),
-                  BottomTelaLogin(isPortrait: isPortrait),
-                ],
-              )
-            : Row(
-                children: [
-                  TopoTelaLogin(isPortrait: isPortrait),
-                  SizedBox(height: 10, width: 10),
-                  BottomTelaLogin(isPortrait: isPortrait),
-                ],
-              ),
       ),
     );
   }
@@ -85,7 +103,7 @@ class TopoTelaLogin extends StatelessWidget {
                       'By tapping Create Account or Sign In, you agree to our ',
                   style: TextStyle(
                       fontWeight: FontWeight.w800,
-                      fontSize: 14,
+                      fontSize: 15,
                       height: 1.4,
                       fontFamily: 'Montserrat, sans-serif',
                       color: Color(cor_tinder_texto)),

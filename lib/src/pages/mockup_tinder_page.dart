@@ -92,7 +92,6 @@ class TopoTelaLogin extends StatelessWidget {
                 height: 100,
               ),
             ),
-            (isPortrait) ? Spacer() : SizedBox(),
             Container(
               margin: EdgeInsets.all(10),
               height: 90,
@@ -103,7 +102,7 @@ class TopoTelaLogin extends StatelessWidget {
                       'By tapping Create Account or Sign In, you agree to our ',
                   style: TextStyle(
                       fontWeight: FontWeight.w800,
-                      fontSize: 15,
+                      fontSize: 14,
                       height: 1.4,
                       fontFamily: 'Montserrat, sans-serif',
                       color: Color(cor_tinder_texto)),
@@ -150,7 +149,7 @@ class BottomTelaLogin extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Expanded(
-      flex: 1,
+      flex: (isPortrait) ? 0 : 1,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.end,
         crossAxisAlignment: CrossAxisAlignment.center,

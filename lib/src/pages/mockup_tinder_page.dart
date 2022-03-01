@@ -1,3 +1,5 @@
+// ignore_for_file: non_constant_identifier_names
+
 import 'package:flutter/material.dart';
 
 import 'package:flutterando_mastersclass_mockups/src/shared/constantes.dart';
@@ -9,7 +11,7 @@ class TinderPage extends StatelessWidget {
   Widget build(BuildContext context) {
     var isPortrait = MediaQuery.of(context).orientation == Orientation.portrait;
 
-    var _icon_arrow_back =
+    Icon IconArrowBack =
         Icon(Icons.arrow_back_ios, size: 25, color: Color(cor_tinder_texto));
 
     return Material(
@@ -34,7 +36,7 @@ class TinderPage extends StatelessWidget {
           child: (isPortrait)
               ? Stack(
                   children: [
-                    _icon_arrow_back,
+                    IconArrowBack,
                     Column(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
@@ -46,7 +48,7 @@ class TinderPage extends StatelessWidget {
                 )
               : Stack(
                   children: [
-                    _icon_arrow_back,
+                    IconArrowBack,
                     Row(
                       children: [
                         TopoTelaLogin(isPortrait: isPortrait),

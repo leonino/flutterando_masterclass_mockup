@@ -1,12 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 
-class ProficionalModel {
+class ProfissionalModel {
   final String nome;
   final String imageUrl;
   final String description;
   final List<RedesSocial> redesSociais;
-  ProficionalModel({
+  ProfissionalModel({
     required this.nome,
     required this.imageUrl,
     required this.description,

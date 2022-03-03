@@ -21,7 +21,9 @@ class _RepositorioGitHubPageState extends State<RepositorioGitHubPage> {
   @override
   Widget build(BuildContext context) {
     return WebView(
-      initialUrl: 'https://github.com/leonino/leonino',
+      initialUrl: 'https://github.com/leonino',
+      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+      javascriptMode: JavascriptMode.unrestricted,
     );
   }
 }

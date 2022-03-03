@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:flutterando_mastersclass_mockups/src/models/proficional_model.dart';
+import 'package:flutterando_mastersclass_mockups/src/models/profissional_model.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../shared/constantes.dart';
 
-class InfoProficionalWidget extends StatelessWidget {
-  final ProficionalModel proficionalInfo;
-  const InfoProficionalWidget({
+class InfoProfissionalWidget extends StatelessWidget {
+  final ProfissionalModel profissionalInfo;
+  const InfoProfissionalWidget({
     Key? key,
-    required this.proficionalInfo,
+    required this.profissionalInfo,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    var info = proficionalInfo;
+    var info = profissionalInfo;
     return Container(
       height: 320,
       width: double.infinity,

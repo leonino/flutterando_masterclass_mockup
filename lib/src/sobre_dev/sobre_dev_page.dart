@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutterando_mastersclass_mockups/src/controllers/habilidade_controller.dart';
-import 'package:flutterando_mastersclass_mockups/src/models/proficional_model.dart';
+import 'package:flutterando_mastersclass_mockups/src/models/profissional_model.dart';
 
-import '../componentes/info_proficional_widget.dart';
+import '../componentes/info_profissional_widget.dart';
 import '../componentes/lista_lateral_widget.dart';
 import '../componentes/lista_vertical_indicator_widget.dart';
 
@@ -15,7 +15,7 @@ class SobreDevPage extends StatefulWidget {
 
 class _SobreDevPageState extends State<SobreDevPage> {
   late final HabilidadeController habilidadeController;
-  late final info = ProficionalModel(
+  late final info = ProfissionalModel(
     nome: 'Marcos da Silva Ribeiro',
     description:
         'Desenvolvedor FullStack Java/JPA/JSF Pleno - MySQL/PostgreeSQL - Dart/Flutter Pleno - Experiencia de 30 anos com Analise e desenvolvimento de diversos aplicativos',
@@ -31,7 +31,7 @@ class _SobreDevPageState extends State<SobreDevPage> {
       ),
       RedesSocial(
         tipo: TipoRedeSocial.github,
-        url: 'https://github.com/leonino/leonino',
+        url: 'https://github.com/leonino',
       ),
       RedesSocial(
         tipo: TipoRedeSocial.instagram,
@@ -61,8 +61,8 @@ class _SobreDevPageState extends State<SobreDevPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              InfoProficionalWidget(
-                proficionalInfo: info,
+              InfoProfissionalWidget(
+                profissionalInfo: info,
               ),
               SizedBox(height: 20),
               ListaLateralWidget(

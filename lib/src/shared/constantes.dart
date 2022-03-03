@@ -47,7 +47,7 @@ class ColorsLight {
 
 const PAGINAS = ["Atividades", "Repositórios", "Sobre o dev"];
 
-const EXERCICIOS = [
+const ATIVIDADES = [
   {
     'id': 4,
     'icon': FontAwesome5Solid.running, //'assets/icons/mockup_animacoes.png',
@@ -70,5 +70,51 @@ const EXERCICIOS = [
     'title': 'Playground',
     'description': 'Ambiente destinado a testes e estudos em geral',
     'url': '/playground',
+  },
+];
+
+const EXERCICIOS = [
+  {
+    'id': 1,
+    'title': 'Exercicio 01',
+    'url': '',
+  },
+  {
+    'id': 2,
+    'title': 'Exercicio 02',
+    'url': '',
+  },
+  {
+    'id': 3,
+    'title': 'Exercicio 03',
+    'url': '',
+  },
+  {
+    'id': 4,
+    'title': 'Exercicio 04',
+    'url': '',
+  },
+];
+
+const PLAYGROUNDS = [
+  {
+    'id': 1,
+    'title': 'Exercicio 01',
+    'url': '',
+  },
+  {
+    'id': 2,
+    'title': 'Exercicio 02',
+    'url': '',
+  },
+  {
+    'id': 3,
+    'title': 'Exercicio 03',
+    'url': '',
+  },
+  {
+    'id': 4,
+    'title': 'Exercicio 04',
+    'url': '',
   },
 ];

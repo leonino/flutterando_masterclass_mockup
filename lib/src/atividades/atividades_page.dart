@@ -12,9 +12,9 @@ class AtividadesPage extends StatelessWidget {
       padding: const EdgeInsets.only(top: 12),
       child: Container(
         child: ListView.builder(
-          itemCount: EXERCICIOS.length,
+          itemCount: ATIVIDADES.length,
           itemBuilder: (context, index) {
-            Map<String, dynamic> item = EXERCICIOS[index];
+            Map<String, dynamic> item = ATIVIDADES[index];
             return Padding(
               padding: const EdgeInsets.all(8.0),
               child: Card(

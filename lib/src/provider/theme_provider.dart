@@ -16,6 +16,7 @@ class MyThemes {
   static final lightTheme = ThemeData.light().copyWith(
     scaffoldBackgroundColor: corWhite90,
     primaryColor: corBlue,
+    highlightColor: corBlack90,
     appBarTheme: AppBarTheme(
       actionsIconTheme: IconThemeData(color: corBlack90),
       color: corWhite90,
@@ -43,30 +44,36 @@ class MyThemes {
     ),
     bottomNavigationBarTheme: const BottomNavigationBarThemeData(
       unselectedItemColor: corBlack90,
-      selectedItemColor: corBlack90,
+      selectedItemColor: corBlack50,
       backgroundColor: corWhite90,
       selectedLabelStyle: TextStyle(
-          fontSize: 12,
-          fontWeight: FontWeight.bold,
-          fontFamily: "Montserrat",
+          fontSize: 11,
+          fontWeight: FontWeight.normal,
+          fontFamily: "Poppins",
           color: Colors.black),
       unselectedLabelStyle: TextStyle(
-          fontSize: 12,
+          fontSize: 11,
           fontWeight: FontWeight.normal,
-          fontFamily: "Montserrat",
+          fontFamily: "Poppins",
           color: Colors.black),
     ),
     textTheme: const TextTheme(
       headline1: TextStyle(
         fontFamily: 'Poppins',
-        fontSize: 18,
-        fontWeight: FontWeight.w700,
+        fontSize: 16,
+        fontWeight: FontWeight.normal,
         color: corBlack90,
       ),
       headline2: TextStyle(
         fontFamily: 'Poppins',
         fontSize: 14,
         fontWeight: FontWeight.w700,
+        color: corBlack90,
+      ),
+      headline3: TextStyle(
+        fontFamily: 'Poppins',
+        fontSize: 15,
+        fontWeight: FontWeight.normal,
         color: corBlack90,
       ),
       bodyText1: TextStyle(
@@ -111,6 +118,7 @@ class MyThemes {
   static final darkTheme = ThemeData.dark().copyWith(
     scaffoldBackgroundColor: corBlack90,
     primaryColor: corBlue,
+    highlightColor: corWhite,
     appBarTheme: AppBarTheme(
       actionsIconTheme: IconThemeData(color: corWhite),
       color: corBlack90,
@@ -137,31 +145,37 @@ class MyThemes {
       color: corBlack90,
     ),
     bottomNavigationBarTheme: const BottomNavigationBarThemeData(
-      unselectedItemColor: corWhite,
+      unselectedItemColor: corWhite90,
       selectedItemColor: corWhite,
       backgroundColor: corBlack90,
       selectedLabelStyle: TextStyle(
-          fontSize: 12,
-          fontWeight: FontWeight.bold,
-          fontFamily: "Montserrat",
+          fontSize: 11,
+          fontWeight: FontWeight.normal,
+          fontFamily: "poppins",
           color: corWhite),
       unselectedLabelStyle: TextStyle(
-          fontSize: 12,
+          fontSize: 11,
           fontWeight: FontWeight.normal,
-          fontFamily: "Montserrat",
+          fontFamily: "poppins",
           color: corWhite),
     ),
     textTheme: const TextTheme(
       headline1: TextStyle(
         fontFamily: 'Poppins',
-        fontSize: 18,
-        fontWeight: FontWeight.w700,
+        fontSize: 16,
+        fontWeight: FontWeight.normal,
         color: corWhite,
       ),
       headline2: TextStyle(
         fontFamily: 'Poppins',
         fontSize: 14,
         fontWeight: FontWeight.w700,
+        color: corWhite,
+      ),
+      headline3: TextStyle(
+        fontFamily: 'Poppins',
+        fontSize: 15,
+        fontWeight: FontWeight.normal,
         color: corWhite,
       ),
       bodyText1: TextStyle(

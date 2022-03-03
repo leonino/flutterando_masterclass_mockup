@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_vector_icons/flutter_vector_icons.dart';
-import 'package:flutterando_mastersclass_mockups/src/home/atividades_page.dart';
+import 'package:flutterando_mastersclass_mockups/src/atividades/atividades_page.dart';
+import 'package:flutterando_mastersclass_mockups/src/componentes/change_theme_button_widget.dart';
 import 'package:flutterando_mastersclass_mockups/src/repositorio_github/repository_github.dart';
 import 'package:flutterando_mastersclass_mockups/src/sobre_dev/sobre_dev_page.dart';
 
+import '../componentes/my_bottom_navigator_bar_widget.dart';
 import '../shared/constantes.dart';
-import '../shared/widget/change_theme_button_widget.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -81,61 +81,6 @@ class _HomePageState extends State<HomePage> {
       ),
       bottomNavigationBar:
           MyBottomNavigatorBar(onTap: _onTap, selectedIndex: _selectedIndex),
-    );
-  }
-}
-
-class MyBottomNavigatorBar extends StatelessWidget {
-  final void Function(int event) onTap;
-  final int selectedIndex;
-  const MyBottomNavigatorBar({
-    Key? key,
-    required this.onTap,
-    required this.selectedIndex,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    print(selectedIndex);
-    return Stack(
-      alignment: Alignment.bottomLeft,
-      children: [
-        BottomNavigationBar(
-          currentIndex: selectedIndex,
-          //selectedItemColor: corWhite,
-          //unselectedItemColor: corWhite,
-          items: [
-            BottomNavigationBarItem(
-              icon: Icon(FontAwesome.bullseye),
-              label: "Atividades",
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(FontAwesome.github),
-              label: "Repositórios",
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(FontAwesome.user),
-              label: "Sobre o dev",
-            ),
-          ],
-          onTap: onTap,
-        ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            Container(
-              color: corCinza,
-              width: 1,
-              height: 50,
-            ),
-            Container(
-              color: corCinza,
-              width: 1,
-              height: 50,
-            ),
-          ],
-        )
-      ],
     );
   }
 }

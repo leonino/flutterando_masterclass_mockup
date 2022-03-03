@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutterando_mastersclass_mockups/src/home/animacoes_page.dart';
+import 'package:flutterando_mastersclass_mockups/src/atividades/animacoes_page.dart';
+import 'package:flutterando_mastersclass_mockups/src/atividades/mockup_page.dart';
+import 'package:flutterando_mastersclass_mockups/src/atividades/playgroun_page.dart';
 import 'package:flutterando_mastersclass_mockups/src/home/home_page.dart';
-import 'package:flutterando_mastersclass_mockups/src/home/mockup_page.dart';
-import 'package:flutterando_mastersclass_mockups/src/home/playgroun_page.dart';
 import 'package:flutterando_mastersclass_mockups/src/pages/mockup_tinder_page.dart';
 import 'package:flutterando_mastersclass_mockups/src/pages/mockup_under_control_page.dart';
 import 'package:flutterando_mastersclass_mockups/src/provider/theme_provider.dart';

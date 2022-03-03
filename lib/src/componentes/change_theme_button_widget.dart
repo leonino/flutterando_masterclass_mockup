@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
+import 'package:flutterando_mastersclass_mockups/src/provider/theme_provider.dart';
 import 'package:provider/provider.dart';
-
-import '../../provider/theme_provider.dart';
 
 class ChangeThemeButtonWidget extends StatelessWidget {
   ChangeThemeButtonWidget({

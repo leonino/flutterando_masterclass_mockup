@@ -11,7 +11,9 @@ class UnderControlPage extends StatelessWidget {
       color: Colors.green,
       child: GestureDetector(
         onTap: () {
-          Navigator.of(context).pushReplacementNamed('/tinder');
+          (Navigator.of(context).canPop())
+              ? Navigator.of(context).pop()
+              : Navigator.of(context).pushReplacementNamed('/tinder');
         },
         child: Container(
           color: Colors.black,

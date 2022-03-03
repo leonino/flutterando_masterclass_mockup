@@ -17,7 +17,9 @@ class TinderPage extends StatelessWidget {
     return Material(
       child: GestureDetector(
         onTap: () {
-          Navigator.of(context).pushReplacementNamed('/under');
+          (Navigator.of(context).canPop())
+              ? Navigator.of(context).pop()
+              : Navigator.of(context).pushReplacementNamed('/under');
         },
         child: Container(
           padding: EdgeInsets.all(25),

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutterando_mastersclass_mockups/src/atividades/animacoes_page.dart';
-import 'package:flutterando_mastersclass_mockups/src/atividades/mockup_page.dart';
-import 'package:flutterando_mastersclass_mockups/src/atividades/playgroun_page.dart';
+import 'package:flutterando_mastersclass_mockups/main.dart';
+import 'package:flutterando_mastersclass_mockups/src/atividades/exercicios_page.dart';
 import 'package:flutterando_mastersclass_mockups/src/home/home_page.dart';
 import 'package:flutterando_mastersclass_mockups/src/pages/mockup_tinder_page.dart';
 import 'package:flutterando_mastersclass_mockups/src/pages/mockup_under_control_page.dart';
@@ -16,15 +15,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     ThemeProvider thema = context.watch<ThemeProvider>();
     return MaterialApp(
+      navigatorKey: navigatorKey,
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: thema.value,
       routes: {
         '/': (context) => const SplashPage(),
         '/home': (context) => const HomePage(),
-        '/animacoes': (context) => const AnimacoesPage(),
-        '/mockup': (context) => const MockupPage(),
-        '/playground': (context) => const PlaygroundPage(),
+        '/exercicio': (context) => const ExerciciosPage(),
         '/under': (context) => const UnderControlPage(),
         '/tinder': (context) => const TinderPage(),
       },

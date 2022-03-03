@@ -22,7 +22,7 @@ dependencies:
   url_launcher: ^6.0.20
   percent_indicator: ^4.0.0
   webview_flutter: ^3.0.1
-  #flutter_progress_hud: ^2.0.0
+  webview_windows: ^0.1.6
 
 dev_dependencies:
   flutter_test:

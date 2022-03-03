@@ -49,27 +49,24 @@ const PAGINAS = ["Atividades", "Repositórios", "Sobre o dev"];
 
 const ATIVIDADES = [
   {
-    'id': 4,
     'icon': FontAwesome5Solid.running, //'assets/icons/mockup_animacoes.png',
     'title': 'Animações',
     'description':
         'Estudos sobre animações implícitas e controladas, contendo 4 exercícios e 2 estudos',
-    'url': '/animacoes',
+    'data': EXERCICIOS,
   },
   {
-    'id': 2,
     'icon': FontAwesome5Solid.glasses, //'assets/icons/mockup_mockup.png',
     'title': 'Leitura de Mockup',
     'description':
         'Aplicação da técnica de leitura de mockup, contendo 2 exercícios',
-    'url': '/mockup',
+    'data': MOCKUPS,
   },
   {
-    'id': 3,
     'icon': MaterialIcons.toys, //'assets/icons/mockup_toys.png',
     'title': 'Playground',
     'description': 'Ambiente destinado a testes e estudos em geral',
-    'url': '/playground',
+    'data': PLAYGROUNDS,
   },
 ];
 
@@ -93,6 +90,19 @@ const EXERCICIOS = [
     'id': 4,
     'title': 'Exercicio 04',
     'url': '',
+  },
+];
+
+const MOCKUPS = [
+  {
+    'id': 1,
+    'title': 'Under Control',
+    'url': '/under',
+  },
+  {
+    'id': 2,
+    'title': 'Tinder',
+    'url': '/tinder',
   },
 ];
 

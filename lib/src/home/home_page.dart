@@ -36,39 +36,8 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        elevation: 0,
-        title: Row(
-          children: [
-            Container(
-              height: 48,
-              width: 48,
-              child: Image.asset(
-                "assets/images/logo/logo.png",
-                fit: BoxFit.fitWidth,
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(4.0),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(PAGINAS[_selectedIndex]),
-                  Text(
-                    "Flutterando MasterClass",
-                    style: Theme.of(context).textTheme.subtitle2,
-                  ),
-                ],
-              ),
-            ),
-          ],
-        ),
-        actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: 12.0),
-            child: ChangeThemeButtonWidget(),
-          ),
-        ],
+      appBar: CustomAppBarWidget(
+        selectedIndex: _selectedIndex,
       ),
       body: PageView(
         controller: _controller,
@@ -79,8 +48,62 @@ class _HomePageState extends State<HomePage> {
           SobreDevPage(),
         ],
       ),
-      bottomNavigationBar:
-          MyBottomNavigatorBar(onTap: _onTap, selectedIndex: _selectedIndex),
+      bottomNavigationBar: MyBottomNavigatorBar(
+        onTap: _onTap,
+        selectedIndex: _selectedIndex,
+      ),
     );
   }
+}
+
+class CustomAppBarWidget extends StatelessWidget
+    implements PreferredSizeWidget {
+  const CustomAppBarWidget({
+    Key? key,
+    required int selectedIndex,
+  })  : _selectedIndex = selectedIndex,
+        super(key: key);
+
+  final int _selectedIndex;
+
+  @override
+  Widget build(BuildContext context) {
+    return AppBar(
+      elevation: 0,
+      title: Row(
+        children: [
+          Container(
+            height: 48,
+            width: 48,
+            child: Image.asset(
+              "assets/images/logo/logo.png",
+              fit: BoxFit.fitWidth,
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(4.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(PAGINAS[_selectedIndex]),
+                Text(
+                  "Flutterando MasterClass",
+                  style: Theme.of(context).textTheme.subtitle2,
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+      actions: [
+        Padding(
+          padding: const EdgeInsets.only(right: 12.0),
+          child: ChangeThemeButtonWidget(),
+        ),
+      ],
+    );
+  }
+
+  @override
+  Size get preferredSize => Size.fromHeight(56);
 }

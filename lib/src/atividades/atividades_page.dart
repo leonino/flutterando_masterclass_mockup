@@ -34,20 +34,16 @@ class AtividadesPage extends StatelessWidget {
                           Row(
                             children: [
                               Container(
-                                height: 43,
-                                width: 43,
+                                padding: EdgeInsets.all(5),
                                 decoration: BoxDecoration(
-                                    color: Theme.of(context)
-                                        .primaryIconTheme
-                                        .color,
-                                    borderRadius: BorderRadius.circular(100)),
-                                child: Align(
-                                  alignment: Alignment.center,
-                                  child: Icon(
-                                    item['icon'],
-                                    size: 30,
-                                    color: Theme.of(context).iconTheme.color,
-                                  ),
+                                  color:
+                                      Theme.of(context).primaryIconTheme.color,
+                                  borderRadius: BorderRadius.circular(100),
+                                ),
+                                child: Icon(
+                                  item['icon'],
+                                  size: 30,
+                                  color: Theme.of(context).iconTheme.color,
                                 ),
                               ),
                               SizedBox(width: 10),
@@ -65,7 +61,7 @@ class AtividadesPage extends StatelessWidget {
                               ),
                               SizedBox(width: 10),
                               Text(
-                                '${item['id']}',
+                                '${item['data'].length}',
                                 style: Theme.of(context).textTheme.labelMedium,
                               ),
                             ],
@@ -121,7 +117,10 @@ class AtividadesPage extends StatelessWidget {
                                 ),
                                 style: ButtonStyle(),
                                 onPressed: () {
-                                  Navigator.of(context).pushNamed(item['url']);
+                                  Navigator.of(context).pushNamed(
+                                    '/exercicio',
+                                    arguments: item,
+                                  );
                                 },
                               ),
                             )

@@ -17,34 +17,6 @@ const Color corWhite90 = Color(0xFFD6DFE4);
 const Color corWhite = Color(0xFFEDF4F8);
 const Color corBlue = Color(0xFF055AA3);
 
-class ColorsDark {
-  static const Color colorDescriptionDark = Color(0xff51565a);
-  static const Color colorCardDark = Color(0xff172026);
-  static const Color colorBackgroundDark = Color(0xff121517);
-  static const Color colorHighLight = Color(0xff172026);
-  static const Color colorBackgroundLigth = Color(0xffd6dfe4);
-
-  static const Color corPrimary = Color(0xff055aa3);
-  static const Color corTextHighLight = Color(0xFFEDF4F8);
-  static const Color corScafoldBackground = Color(0xFFD6DFE4);
-  static const Color corCardBackground = Color(0xFF172026);
-}
-
-class ColorsLight {
-  static const Color corHighLight = Color(0xFF172026);
-
-  static const Color colorDescriptionDark = Color(0xff51565a);
-  static const Color colorCardDark = Color(0xff172026);
-  static const Color colorBackgroundDark = Color(0xff121517);
-  static const Color colorHighLight = Color(0xff172026);
-  static const Color colorBackgroundLigth = Color(0xffd6dfe4);
-
-  static const Color corPrimary = Color(0xff055aa3);
-  static const Color corTextHighLight = Color(0xFF172026);
-  static const Color corScafoldBackground = Color(0xFFD6DFE4);
-  static const Color corCardBackground = Color(0xFFEDF4F8);
-}
-
 const ATIVIDADES = [
   {
     'icon': FontAwesome5Solid.running, //'assets/icons/mockup_animacoes.png',

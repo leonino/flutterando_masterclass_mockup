@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 
-import '../shared/constantes.dart';
+import '../shared/constante_cores.dart';
 
 class MyBottomNavigatorBar extends StatelessWidget {
   final void Function(int event) onTap;

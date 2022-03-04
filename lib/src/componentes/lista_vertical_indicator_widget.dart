@@ -41,6 +41,7 @@ class ListaVerticalIndicatorWidget extends StatelessWidget {
                     lineHeight: 8.0,
                     percent: percent,
                     progressColor: Theme.of(context).primaryColor,
+                    backgroundColor: Theme.of(context).scaffoldBackgroundColor,
                     barRadius: Radius.circular(50),
                     leading: Container(
                       width: xWidth,

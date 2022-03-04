@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutterando_mastersclass_mockups/src/shared/constantes.dart';
+import 'package:flutterando_mastersclass_mockups/src/shared/constante_cores.dart';
 
 class ThemeProvider extends ValueNotifier<ThemeData> {
   ThemeProvider() : super(MyThemes.darkTheme);

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutterando_mastersclass_mockups/src/models/profissional_model.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-import '../shared/constantes.dart';
+import '../shared/constante_cores.dart';
 
 class InfoProfissionalWidget extends StatelessWidget {
   final ProfissionalModel profissionalInfo;
@@ -33,7 +33,7 @@ class InfoProfissionalWidget extends StatelessWidget {
               backgroundImage: AssetImage(info.imageUrl),
             ),
             decoration: BoxDecoration(
-              color: corWhite,
+              color: Theme.of(context).iconTheme.color,
               borderRadius: BorderRadius.circular(100),
             ),
           ),
@@ -62,21 +62,25 @@ class InfoProfissionalWidget extends StatelessWidget {
                 itemCount: info.redesSociais.length,
                 itemBuilder: (BuildContext context, int index) {
                   var item = info.redesSociais[index];
-                  return IconButton(
-                    icon: Icon(
-                      item.tipo.icon,
-                      color: Theme.of(context).highlightColor,
-                      semanticLabel: item.tipo.title,
+                  return Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 4),
+                    child: IconButton(
+                      icon: Icon(
+                        item.tipo.icon,
+                        size: 32,
+                        color: Theme.of(context).highlightColor,
+                        semanticLabel: item.tipo.title,
+                      ),
+                      onPressed: () {
+                        launch(item.url);
+                      },
                     ),
-                    onPressed: () {
-                      launch(item.url);
-                    },
                   );
                 },
               ),
             ),
           ),
-          Spacer(),
+          SizedBox(height: 20),
         ],
       ),
     );

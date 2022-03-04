@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../componentes/card_atividade_widget.dart';
-import '../shared/constantes.dart';
+import '../shared/constante_cores.dart';
 
 class AtividadesPage extends StatelessWidget {
   const AtividadesPage({Key? key}) : super(key: key);

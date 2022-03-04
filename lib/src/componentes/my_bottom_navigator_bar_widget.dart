@@ -20,7 +20,7 @@ class MyBottomNavigatorBar extends StatelessWidget {
       children: [
         BottomNavigationBar(
           currentIndex: selectedIndex,
-          //selectedItemColor: corWhite,
+          selectedItemColor: Theme.of(context).primaryColor,
           //unselectedItemColor: corWhite,
           items: [
             BottomNavigationBarItem(

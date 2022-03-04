@@ -51,22 +51,22 @@ class ExerciciosPage extends StatelessWidget {
             itemCount: arguments['data'].length,
             itemBuilder: (_, index) {
               Map<String, dynamic> item = arguments['data'][index];
-              return Container(
-                  margin: EdgeInsets.symmetric(horizontal: 11, vertical: 4),
-                  padding: EdgeInsets.all(13),
-                  decoration: BoxDecoration(
-                    color: Theme.of(context).cardTheme.color,
-                    borderRadius: BorderRadius.circular(50),
-                  ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      InkWell(
-                        onTap: () {
-                          Navigator.of(context).pushNamed(item['url']);
-                        },
-                        child: CircleAvatar(
+              return InkWell(
+                onTap: () {
+                  Navigator.of(context).pushNamed(item['url']);
+                },
+                child: Container(
+                    margin: EdgeInsets.symmetric(horizontal: 11, vertical: 4),
+                    padding: EdgeInsets.all(13),
+                    decoration: BoxDecoration(
+                      color: Theme.of(context).cardTheme.color,
+                      borderRadius: BorderRadius.circular(50),
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        CircleAvatar(
                           radius: 17,
                           child: Text(
                             '${item['id']}',
@@ -74,13 +74,13 @@ class ExerciciosPage extends StatelessWidget {
                           ),
                           backgroundColor: Theme.of(context).primaryColor,
                         ),
-                      ),
-                      Text(
-                        item['title'],
-                        style: Theme.of(context).textTheme.headline1,
-                      ),
-                    ],
-                  ));
+                        Text(
+                          item['title'],
+                          style: Theme.of(context).textTheme.headline1,
+                        ),
+                      ],
+                    )),
+              );
             }),
       ),
     );

@@ -45,8 +45,6 @@ class ColorsLight {
   static const Color corCardBackground = Color(0xFFEDF4F8);
 }
 
-const PAGINAS = ["Atividades", "Repositórios", "Sobre o dev"];
-
 const ATIVIDADES = [
   {
     'icon': FontAwesome5Solid.running, //'assets/icons/mockup_animacoes.png',

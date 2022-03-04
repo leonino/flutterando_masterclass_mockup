@@ -8,8 +8,8 @@ import 'package:flutterando_mastersclass_mockups/src/provider/theme_provider.dar
 import 'package:flutterando_mastersclass_mockups/src/splash/splash_page.dart';
 import 'package:provider/provider.dart';
 
-class MyApp extends StatelessWidget {
-  MyApp({Key? key}) : super(key: key);
+class AppWidget extends StatelessWidget {
+  AppWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

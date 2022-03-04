@@ -9,6 +9,6 @@ void main() {
     providers: [
       ChangeNotifierProvider(create: (_) => ThemeProvider()),
     ],
-    child: MyApp(),
+    child: AppWidget(),
   ));
 }

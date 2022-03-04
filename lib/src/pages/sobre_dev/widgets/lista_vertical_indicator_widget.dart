@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 
-import '../controllers/habilidade_controller.dart';
+import '../../../controllers/habilidade_controller.dart';
 
 class ListaVerticalIndicatorWidget extends StatelessWidget {
   final HabilidadeController habilidadeController;

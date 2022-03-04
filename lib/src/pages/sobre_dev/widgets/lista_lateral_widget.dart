@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../controllers/habilidade_controller.dart';
+import '../../../controllers/habilidade_controller.dart';
 
 class ListaLateralWidget extends StatelessWidget {
   final HabilidadeController habilidadeController;

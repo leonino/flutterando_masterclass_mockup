@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'change_theme_button_widget.dart';
+import '../../componentes/change_theme_button_widget.dart';
 
 const PAGINAS = ["Atividades", "Repositórios", "Sobre o dev"];
 

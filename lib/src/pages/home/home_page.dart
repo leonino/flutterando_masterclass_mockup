@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutterando_mastersclass_mockups/src/atividades/atividades_page.dart';
+import 'package:flutterando_mastersclass_mockups/src/pages/atividades/atividades_page.dart';
+import 'package:flutterando_mastersclass_mockups/src/pages/repositorio_github/repository_github.dart';
+import 'package:flutterando_mastersclass_mockups/src/pages/sobre_dev/sobre_dev_page.dart';
 
-import 'package:flutterando_mastersclass_mockups/src/repositorio_github/repository_github.dart';
-import 'package:flutterando_mastersclass_mockups/src/sobre_dev/sobre_dev_page.dart';
-
-import '../componentes/custom_appbar_widget.dart';
-import '../componentes/my_bottom_navigator_bar_widget.dart';
+import 'custom_appbar_widget.dart';
+import '../../componentes/my_bottom_navigator_bar_widget.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);

@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutterando_mastersclass_mockups/src/controllers/habilidade_controller.dart';
 import 'package:flutterando_mastersclass_mockups/src/models/profissional_model.dart';
 
-import '../componentes/info_profissional_widget.dart';
-import '../componentes/lista_lateral_widget.dart';
-import '../componentes/lista_vertical_indicator_widget.dart';
+import 'widgets/info_profissional_widget.dart';
+import 'widgets/lista_lateral_widget.dart';
+import 'widgets/lista_vertical_indicator_widget.dart';
 
 class SobreDevPage extends StatefulWidget {
   const SobreDevPage({Key? key}) : super(key: key);

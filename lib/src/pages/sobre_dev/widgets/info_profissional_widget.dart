@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutterando_mastersclass_mockups/src/models/profissional_model.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-import '../shared/constante_cores.dart';
-
 class InfoProfissionalWidget extends StatelessWidget {
   final ProfissionalModel profissionalInfo;
   const InfoProfissionalWidget({

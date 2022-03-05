@@ -164,11 +164,9 @@ class _RepositorioGitHubPageState extends State<RepositorioGitHubPage> {
                 backgroundColor: Theme.of(context).scaffoldBackgroundColor,
                 javascriptMode: JavascriptMode.unrestricted,
                 onPageFinished: (message) {
-                  print(message);
                   toggle(false);
                 },
                 onPageStarted: (message) {
-                  print(message);
                   toggle(true);
                 },
                 gestureNavigationEnabled: false,

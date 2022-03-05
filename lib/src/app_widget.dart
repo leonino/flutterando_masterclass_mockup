@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutterando_mastersclass_mockups/main.dart';
+import 'package:flutterando_mastersclass_mockups/src/pages/animacoes/explicitas/animacoes_explicitas_01.dart';
+import 'package:flutterando_mastersclass_mockups/src/pages/animacoes/explicitas/animacoes_explicitas_02.dart';
+import 'package:flutterando_mastersclass_mockups/src/pages/animacoes/implicitas/animacoes_implicitas_01.dart';
+import 'package:flutterando_mastersclass_mockups/src/pages/animacoes/implicitas/animacoes_implicitas_02.dart';
 import 'package:flutterando_mastersclass_mockups/src/pages/atividades/exercicios_page.dart';
 import 'package:flutterando_mastersclass_mockups/src/pages/home/home_page.dart';
 import 'package:flutterando_mastersclass_mockups/src/pages/mockups/mockup_tinder_page.dart';
@@ -23,8 +27,13 @@ class AppWidget extends StatelessWidget {
         '/': (context) => const SplashPage(),
         '/home': (context) => const HomePage(),
         '/exercicio': (context) => const ExerciciosPage(),
+        '/animacoes': (context) => const ExerciciosPage(),
         '/under': (context) => const UnderControlPage(),
         '/tinder': (context) => const TinderPage(),
+        '/impricita01': (context) => const AnimacoesImplicitasExercicio01(),
+        '/impricita02': (context) => const AnimacoesImplicitasExercicio02(),
+        '/explicita01': (context) => const AnimacoesExplicitasExercicio01(),
+        '/explicita02': (context) => const AnimacoesExplicitasExercicio02(),
       },
     );
   }

@@ -24,6 +24,7 @@ const ATIVIDADES = [
     'description':
         'Estudos sobre animações implícitas e controladas, contendo 4 exercícios e 2 estudos',
     'data': EXERCICIOS,
+    'codigo_fonte_url': 'https://github.com/leonino/masterclass_animacoes',
   },
   {
     'icon': FontAwesome5Solid.glasses, //'assets/icons/mockup_mockup.png',
@@ -31,35 +32,37 @@ const ATIVIDADES = [
     'description':
         'Aplicação da técnica de leitura de mockup, contendo 2 exercícios',
     'data': MOCKUPS,
+    'codigo_fonte_url': 'https://github.com/leonino?tab=repositories',
   },
   {
     'icon': MaterialIcons.toys, //'assets/icons/mockup_toys.png',
     'title': 'Playground',
     'description': 'Ambiente destinado a testes e estudos em geral',
     'data': PLAYGROUNDS,
+    'codigo_fonte_url': 'https://github.com/leonino?tab=repositories',
   },
 ];
 
 const EXERCICIOS = [
   {
     'id': 1,
-    'title': 'Exercicio 01',
-    'url': '',
+    'title': 'Animações Explicitas 01',
+    'url': '/impricita01',
   },
   {
     'id': 2,
-    'title': 'Exercicio 02',
-    'url': '',
+    'title': 'Animações Explicitas 02',
+    'url': '/impricita02',
   },
   {
     'id': 3,
-    'title': 'Exercicio 03',
-    'url': '',
+    'title': 'Animações implicitas 01',
+    'url': '/explicita01',
   },
   {
     'id': 4,
-    'title': 'Exercicio 04',
-    'url': '',
+    'title': 'Animações Explicitas 02',
+    'url': '/explicita02',
   },
 ];
 

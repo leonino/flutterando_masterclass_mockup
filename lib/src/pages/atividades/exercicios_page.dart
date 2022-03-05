@@ -3,7 +3,6 @@ import 'package:flutterando_mastersclass_mockups/src/componentes/change_theme_bu
 
 class ExerciciosPage extends StatelessWidget {
   const ExerciciosPage({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     final arguments = (ModalRoute.of(context)?.settings.arguments ?? []) as Map;
@@ -53,7 +52,8 @@ class ExerciciosPage extends StatelessWidget {
               Map<String, dynamic> item = arguments['data'][index];
               return InkWell(
                 onTap: () {
-                  Navigator.of(context).pushNamed(item['url']);
+                  var url = item['url'];
+                  Navigator.of(context).pushNamed(url);
                 },
                 child: Container(
                     margin: EdgeInsets.symmetric(horizontal: 11, vertical: 4),

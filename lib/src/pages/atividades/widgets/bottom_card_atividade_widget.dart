@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class BottomCardAtividadeWidget extends StatelessWidget {
   const BottomCardAtividadeWidget({
@@ -18,7 +19,9 @@ class BottomCardAtividadeWidget extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           InkWell(
-            onTap: () {},
+            onTap: () {
+              launch(item['codigo_fonte_url']);
+            },
             child: Row(
               children: [
                 Icon(
@@ -51,7 +54,7 @@ class BottomCardAtividadeWidget extends StatelessWidget {
               style: ButtonStyle(),
               onPressed: () {
                 Navigator.of(context).pushNamed(
-                  '/exercicio',
+                  "/exercicio",
                   arguments: item,
                 );
               },

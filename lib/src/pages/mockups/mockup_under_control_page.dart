@@ -150,7 +150,7 @@ class ButtonWidget extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Image.asset(
-                      'assets/google_logo.png',
+                      'assets/images/google_logo.png',
                       width: 20,
                       height: 20,
                     ),

@@ -8,7 +8,6 @@ class ThemeProvider extends ValueNotifier<ThemeData> {
 
   void toggleTheme(bool isOn) {
     value = isOn ? MyThemes.darkTheme : MyThemes.lightTheme;
-    print(value);
   }
 }
 

@@ -14,7 +14,6 @@ class MyBottomNavigatorBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print(selectedIndex);
     return Stack(
       alignment: Alignment.bottomLeft,
       children: [

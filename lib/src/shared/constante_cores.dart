@@ -46,23 +46,23 @@ const ATIVIDADES = [
 const EXERCICIOS = [
   {
     'id': 1,
-    'title': 'Animações Explicitas 01',
-    'url': '/impricita01',
-  },
-  {
-    'id': 2,
-    'title': 'Animações Explicitas 02',
-    'url': '/impricita02',
-  },
-  {
-    'id': 3,
-    'title': 'Animações implicitas 01',
+    'title': 'Anim. Explicita: Botão Flutuante',
     'url': '/explicita01',
   },
   {
-    'id': 4,
-    'title': 'Animações Explicitas 02',
+    'id': 2,
+    'title': 'Anim. Explicita: ExpasionTile',
     'url': '/explicita02',
+  },
+  {
+    'id': 3,
+    'title': 'Anim. Implicita: Botão Flutuante',
+    'url': '/impricita01',
+  },
+  {
+    'id': 4,
+    'title': 'Anim. Implicita: ExpasionTile',
+    'url': '/impricita02',
   },
 ];
 

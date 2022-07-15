@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutterando_mastersclass_mockups/main.dart';
 import 'package:flutterando_mastersclass_mockups/src/pages/animacoes/explicitas/animacoes_explicitas_01.dart';
@@ -19,6 +20,9 @@ class AppWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     ThemeProvider thema = context.watch<ThemeProvider>();
     return MaterialApp(
+      scrollBehavior: MaterialScrollBehavior().copyWith(
+        dragDevices: {PointerDeviceKind.mouse, PointerDeviceKind.touch},
+      ),
       navigatorKey: navigatorKey,
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,

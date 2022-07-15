@@ -14,8 +14,8 @@ class SobreDevPage extends StatefulWidget {
 }
 
 class _SobreDevPageState extends State<SobreDevPage> {
-  late final HabilidadeController habilidadeController;
-  late final info = ProfissionalModel(
+  final habilidadeController = HabilidadeController();
+  final info = ProfissionalModel(
     nome: 'Marcos da Silva Ribeiro',
     description:
         'Desenvolvedor FullStack Java/JPA/JSF Pleno - MySQL/PostgreeSQL - Dart/Flutter Pleno - Experiencia de 30 anos com Analise e desenvolvimento de diversos aplicativos',
@@ -47,7 +47,6 @@ class _SobreDevPageState extends State<SobreDevPage> {
   @override
   void initState() {
     super.initState();
-    habilidadeController = HabilidadeController();
   }
 
   @override
@@ -55,8 +54,8 @@ class _SobreDevPageState extends State<SobreDevPage> {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
       child: Container(
-        height: double.infinity,
-        width: double.infinity,
+        height: MediaQuery.of(context).size.height,
+        width: MediaQuery.of(context).size.width,
         child: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,

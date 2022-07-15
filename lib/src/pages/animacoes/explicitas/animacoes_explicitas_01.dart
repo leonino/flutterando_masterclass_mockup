@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 
 class AnimacoesExplicitasExercicio01 extends StatefulWidget {
   const AnimacoesExplicitasExercicio01({Key? key}) : super(key: key);
@@ -12,7 +13,7 @@ class _AnimacoesExplicitas01State extends State<AnimacoesExplicitasExercicio01>
   late AnimationController controller;
   late Animation<double> animationTween;
   late Animation<Alignment> animationAlign;
-  var duration = const Duration(seconds: 2);
+  var duration = const Duration(seconds: 1);
 
   @override
   void initState() {
@@ -67,6 +68,19 @@ class _AnimacoesExplicitas01State extends State<AnimacoesExplicitasExercicio01>
               decoration: BoxDecoration(
                 color: Colors.red,
                 borderRadius: BorderRadius.circular(animationTween.value),
+              ),
+              child: Center(
+                child: (animationTween.isDismissed &&
+                        animationTween.value >= 99)
+                    ? Icon(
+                        FontAwesome5Solid.hand_pointer,
+                        color: Colors.white,
+                        size: 32,
+                      )
+                    : (animationTween.isCompleted && animationTween.value == 0)
+                        ? Text("Clique aqui!",
+                            style: TextStyle(color: Colors.white, fontSize: 18))
+                        : null,
               ),
             ),
           ),

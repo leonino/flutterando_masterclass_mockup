@@ -1,7 +1,8 @@
 import '../models/habilidade_model.dart';
 
 class HabilidadeController {
-  List<HabilidadeModel> fetchAll() {
+  Future<List<HabilidadeModel>> fetchAll() async {
+    await Future.delayed(Duration(seconds: 1));
     return HABILIDADES.map((map) => HabilidadeModel.fromMap(map)).toList();
   }
 }
@@ -9,7 +10,7 @@ class HabilidadeController {
 const HABILIDADES = [
   {
     'nome': 'Java/JSP',
-    'habilidade': 72,
+    'habilidade': 75,
     'icon': 'assets/icons/tecnologias/java.png',
   },
   {
@@ -19,17 +20,17 @@ const HABILIDADES = [
   },
   {
     'nome': 'Postgree SQL',
-    'habilidade': 70,
+    'habilidade': 60,
     'icon': 'assets/icons/tecnologias/postgresql.png',
   },
   {
     'nome': 'JS/TS',
-    'habilidade': 65,
+    'habilidade': 50,
     'icon': 'assets/icons/tecnologias/javascript.png',
   },
   {
     'nome': 'Angular',
-    'habilidade': 46,
+    'habilidade': 45,
     'icon': 'assets/icons/tecnologias/angular.png',
   },
   {

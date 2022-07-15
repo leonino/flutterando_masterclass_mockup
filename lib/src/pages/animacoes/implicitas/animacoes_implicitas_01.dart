@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 
 class AnimacoesImplicitasExercicio01 extends StatefulWidget {
   const AnimacoesImplicitasExercicio01({Key? key}) : super(key: key);
@@ -10,13 +11,19 @@ class AnimacoesImplicitasExercicio01 extends StatefulWidget {
 class _AnimacoesImplicitas01State
     extends State<AnimacoesImplicitasExercicio01> {
   var isCircular = true;
+  var isShow = true;
   var duration = const Duration(seconds: 1);
 
   @override
   Widget build(BuildContext context) {
-    move() {
+    move() async {
       setState(() {
         isCircular = !isCircular;
+        isShow = false;
+        Future.delayed(duration).then((value) {
+          isShow = true;
+          setState(() {});
+        });
       });
     }
 
@@ -38,6 +45,20 @@ class _AnimacoesImplicitas01State
               decoration: BoxDecoration(
                 color: Colors.blue,
                 borderRadius: BorderRadius.circular(isCircular ? 100 : 0),
+              ),
+              child: Center(
+                child: (isCircular && isShow)
+                    ? Icon(
+                        FontAwesome5Solid.hand_pointer,
+                        color: Colors.white,
+                        size: 32,
+                      )
+                    : (!isCircular && isShow)
+                        ? Text(
+                            "Clique aqui!",
+                            style: TextStyle(color: Colors.white, fontSize: 18),
+                          )
+                        : null,
               ),
             ),
           ),
